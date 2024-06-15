@@ -8,3 +8,8 @@ Address: Cavite City
 Contact: 09854442525
 Type: Retail
 ----------------------------------------
+Name: MD
+Address: Cavite City
+Contact: 09452223232
+Type: Regular
+----------------------------------------
