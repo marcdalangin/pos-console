@@ -1,0 +1,75 @@
++------------------+        +------------------+        +-------------------+
+|    Product       |        |     Customer     |        |      User         |
++------------------+        +------------------+        +-------------------+
+| - productID      |        | - name           |        | - username        |
+| - description    |        | - address        |        | - password        |
+| - price          |        | - contact        |        | - role            |
+| - quantity       |        | - type           |        +-------------------+
++------------------+        | - paymentType    |        | + login(usr,pass):|
+| + Product(id,    |        +------------------+        |   bool            |
+|   desc, pr,      |        | + Customer(n,    |        | + getRole():      |
+|   qty)           |        |   addr, cont,    |        |   string          |
+|+ getProductID()  |        |   typ, payType)  |        +-------------------+
+|   : int          |        | + calcDiscount(  |                         
+|+ getDescription()|        |   totalAmount)   |                         
+|   : string       |        |   : void         |                         
+| + getPrice()     |        | + calcInstallment|                         
+|   : float        |        |   (totalAmount,  |                         
+| + getQuantity()  |        |   months): void  |                         
+|   : int          |        | + getName()      |                         
+| + updateStock(   |        |   : string       |                         
+|   qty: int)      |        | + getAddress()   |                         
+|   : void         |        |   : string       |                         
++------------------+        | + getContact()   |                         
+                            |   : string       |                         
+                            | + getType()      |                         
+                            |   : string       |                         
+                            |+ getPaymentType()|                         
+                            |   : string       |                         
+                            +------------------+                         
+                                /  \
+                               /    \
+                              /      \
+                             /        \
+            +------------------+  +------------------+
+            | RegularCustomer  |  |  RetailCustomer  |
+            +------------------+  +------------------+
+            | + RegularCustomer|  | + RetailCustomer |
+            |   (n, addr, cont,|  |   (n, addr, cont,|
+            |   payType)       |  |   payType)       |
+            | + calcDiscount(  |  | + calcDiscount(  |
+            |   totalAmount)   |  |   totalAmount)   |
+            |   : void         |  |   : void         |
+            | + calcInstallment|  | + calcInstallment|
+            |   (totalAmount,  |  |   (totalAmount,  |
+            |   months): void  |  |   months): void  |
+            +------------------+  +------------------+
+                                  
++---------------------+                                    
+|  Transaction        |                                    
++---------------------+                                    
+| - transactionID     |                                    
+| - customer          |                                    
+| - products          |                                    
+| - date              |                                    
+| - totalAmount       |                                    
++---------------------+                                    
+| + Transaction(cust, |
+|   prods)            |                                    
+| + calculateTotal(): |                                    
+|   double            |                                    
+| + applyDiscount()   |                                    
+|   : void            |                                    
+| + getTransactionID()|                                    
+|   : int             |                                    
+| + getDate()         |                                    
+|   : string          |                                    
+| + getCustomer()     |                                    
+|   : Customer*       |                                    
+| + getProducts():    |                                    
+|   vector<Product>&  |                                    
+| + getTotalAmount()  |                                    
+|   : double          |                                         
+| + display()         |                                    
+|   : void            |                                    
++---------------------+                       
