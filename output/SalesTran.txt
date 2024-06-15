@@ -1,0 +1,17 @@
+Transaction ID: 1
+Date: Sat Jun 15 09:40:49 2024
+Customer: Abbie
+Address: San Pedro
+Contact: 09454857232
+  - Laptop (x2) @ 25000
+  - Mouse (x2) @ 1000
+Total Amount: 45760
+----------------------------------------
+Transaction ID: 2
+Date: Sat Jun 15 09:41:31 2024
+Customer: Marc
+Address: Cavite City
+Contact: 09854442525
+  - Mechanical Keyboard (x1) @ 25000
+Total Amount: 22000
+----------------------------------------

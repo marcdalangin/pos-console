@@ -1,0 +1,10 @@
+Name: Abbie
+Address: San Pedro
+Contact: 09454857232
+Type: Regular
+----------------------------------------
+Name: Marc
+Address: Cavite City
+Contact: 09854442525
+Type: Retail
+----------------------------------------
